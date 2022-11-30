@@ -1,8 +1,82 @@
-/*
+.statblock.markdown-preview-view {
+    --statblock-color: #7a200d;
+    --statblock-background-color: #fdf1dc;
+    --text-normal: var(--statblock-color);
+    --hr-color: var(--statblock-color);
+    --italic-color: var(--statblock-color);
+    --bold-color: var(--statblock-color);
+    --h1-color: var(--statblock-color);
+    --h2-color: var(--statblock-color);
+    --h3-color: var(--statblock-color);
+    --h4-color: var(--statblock-color);
+    --h5-color: var(--statblock-color);
+    --h6-color: var(--statblock-color);
+    --table-header-color: var(--statblock-color);
+    --checklist-done-color: var(--statblock-color);
+    --checkbox-border-color: var(--statblock-color);
+    --checkbox-color: #7a200d33;
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
 
-If your plugin does not need CSS, delete this file.
+    --line-width-adaptive: 45em;
+    --h1-size: 2.3em;
+    --h2-size: 1.6em;
+    --font-adaptive-normal: 10pt;
+    --bold-weight: 750;
+	--spacing-p: 0.5em;
+    --checkbox-size: 1em;
 
-*/
+    /* tables */
+    --table-header-size: 1em;
+    --table-header-weight: bold;
+    --table-text-size: 1em;
+    --table-white-space: nowrap;
+}
+.statblock .markdown-preview-sizer {
+    background-color: var(--statblock-background-color);
+    padding: 0 0 10px 10px !important;
+    border-top: 3px solid var(--statblock-color);
+    border-bottom: 3px solid var(--statblock-color);
+}
+.statblock .markdown-preview-sizer > div {
+    padding: 0 15px;
+}
+.statblock h1, .statblock h2 {
+    font-family: "Input Serif", "Libre Baskerville", "Lora", "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
+}
+.statblock table {
+    table-layout: fixed;
+    width: 100%;
+}
+.statblock table, .statblock th, .statblock td, .statblock tr{
+    background-color: var(--statblock-background-color) !important;
+    border: 0 !important;
+}
+.statblock th {
+    padding: 0 !important;
+}
+.statblock td {
+    padding: 0 !important;
+}
+.statblock hr {
+    margin: 0;
+}
+.statblock .contains-task-list li {
+    margin-left: 23px;
+}
+.statblock ul.contains-task-list {
+    display: grid;
+    grid: auto / auto auto;
+    padding: 0;
+}
+.statblock a {
+    color: inherit;
+}
+.statblock .frontmatter, .statblock .frontmatter-container {
+    display:none;
+}
+.ttrpgtools-inline {
+    font-size: 0.7em;
+}
+.ttrpgtools-glossary {
+    text-decoration: underline dotted 1%;
+}
